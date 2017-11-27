@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Introduction/ Problem statement:
+<h1>Introduction/ Problem statement:</h1>
 
 Style transfer has been around for last two-three years now. Most of the work is being done on style transfer to entire image. In Recent times there has been considerable amount of work going in to transfer multiple styles to certain parts of the image. We are trying to implement instance aware targeted style transfer, in which different styles can be transferred to different objects of the image as per the requirement. For example, if an image contains a car and a person we can transfer one style to the car and other style to person. It can also transfer different styles to different instances of the same object.
 
