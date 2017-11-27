@@ -17,14 +17,15 @@ Style transfer.
 explain the procedure with architecture(Anshul/Akshay)
 Here, for semantic segmentation we are using a Mask RCNN. 
 
-<img src="data/anshul_both.jpg"/>
+
 
 ## Style Transfer:
 We implement style transfer as an optimization problem as described in Gatys et al. [1]. Given a content image c, and a style image s we start with any random image and try to minimize the overall loss( content and style loss) given by the formula:
 x∗=argminx(αLcontent(c,x)+βLstyle(s,x))
 L=αLc+βLs
 
-
+Output considering both conv2_2 and conv4_2 layers for content loss:
+<img src="data/anshul_both.jpg"/>
 
 alpha = content loss weightage
 beta = style loss weightage
