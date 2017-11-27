@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<h1 align="center" ><b><font size="+5">Team Dark Knights</font></b></h1>
+<h1 align="center" ><b><font size="+3">Team Dark Knights</font></b></h1>
 
  <table style="width:100%;text-align:center">
   <tr>
