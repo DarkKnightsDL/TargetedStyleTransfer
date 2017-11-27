@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1 align="center"><b>Object Density Estimation</b></h1>
+<h1 align="center"><b>Targeted Style Transfer</b></h1>
 
 <h4 align="center">Anshul Rawat, Akshay Kumar, Shashi Kiran</h4>
 
