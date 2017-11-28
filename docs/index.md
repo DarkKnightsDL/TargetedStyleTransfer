@@ -79,7 +79,7 @@ put some results comparing layers.
 
 We have used L-BFGS optimizer as the default optimizer in our network for style transfer because it converges faster compared to Adam. But the drawback of L-BFGS is that it is computationally heavier compared to Adam. So there is an option to use Adam optimizer if the computational resources are not abundant. Below graph roughly summarizes the performance of these optimizers:
 
-<img src="data/lbfgs_adam.jpg"/>
+<img src="data/lbfgs_adam.png"/>
 
 
 Initially we had planned to do the style transfer to the entire image, followed by instance aware semantic segmentation which gave us the masks for different objects in the image. Then using these masks and user input we planned to superimpose the style onto original image accordingly. But this approach was not optimal as we were transferring many styles over the entire image which was redundant.  So we came up with a different approach for achieving targeted style transfer. Now, we are first doing the instance aware semantic segmentation part, which gives us the bounding boxes as well as the masks for each instance of every object in the image. After that, we take the input from the user as to which instance of which object he/she wants the style to be transferred on. The user can select multiple object instances and for the selected objects, we generate the masks as black and white images, with the white part denoting the mask for that object instance. Once this is done, we transfer the style onto the various user specified objects, and finally we get the style transferred image with the style transfer on the selected objects accordingly.
