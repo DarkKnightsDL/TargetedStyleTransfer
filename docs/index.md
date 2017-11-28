@@ -68,7 +68,7 @@ Usually we use more than one layer to capture the style loss. There we do the su
 We are using pretrained VGG-19 model for style transfer. Conv2_2 and conv4_2 are used for content loss. relu1_1, relu2_1, relu3_1, relu4_1 and relu5_1 are used for evaluation of style loss. These layers are configurable which can be changed as per the requirement.
 put some results comparing layers.
 
-## *VGG-19 model**
+## **VGG-19 model**
 <img src="data/vgg-19.jpg"/>
 
 compare adam and lbfgs
