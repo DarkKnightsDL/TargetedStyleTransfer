@@ -102,9 +102,9 @@ In this section we present various results we got from our network.
 <img src="data/style.png"/>
 
 ## **Output from semantic segmentation**
-<img align = "left" src="data/me_bbox_new.png"/>
+<img src="data/me_bbox_new.png"/>
 
-## **Mask image generated using output of semantic segmentation step which will also be given as input to style transfer**
+## **Mask image generated using output of semantic segmentation**
 <img src="data/me_mask1.jpg"/>
 
 The following results are obtained for 1000 iterations and a ratio of 1:40 for content & style weights.
