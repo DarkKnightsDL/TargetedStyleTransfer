@@ -124,6 +124,9 @@ Here, we also show an example of multi style transfer to different objects in an
 ## **Content image**
 <img src="data/content_multiple.png"/>
 
+## **Mask images**
+<img src="data/mask_combined.PNG"/>
+
 ## **style images**
 <img src="data/style_combined.PNG"/>
 
