@@ -56,7 +56,7 @@ beta = style loss weightage
 
 Total loss has two components:
 
-**Content Loss:**  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content and style features if image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results. Each row of F or P represents the vectorized activations of a particular filter, convolved over all positions of the image.
+**Content Loss:**  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content features of an image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results. Each row of F or P represents the vectorized activations of a particular filter, convolved over all positions of the image.
 
 <img src="data/content_loss.PNG"/>
 
