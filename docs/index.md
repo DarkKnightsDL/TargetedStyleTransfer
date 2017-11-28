@@ -99,5 +99,9 @@ The following results are obtained for 1000 iterations and a ratio of 1:40 for c
 # **References**
 
 [1] Leon A. Gatys, Alexander S. Ecker and Matthias Bethge. "A Neural Algorithm of Artistic Style", arXiv:1508.06576v2, 2 Sep 2015.
+[2] Justin Johnson, Alexandre Alahi and Li Fei-Fei. "Perceptual Losses for Real-Time Style Transfer and Super-Resolution",      arXiv:1603.08155v1, 27 Mar 2016.
+[3] Carlos Castillo, Soham De, Xintong Han, Bharat Singh, Abhay Kumar Yadav and Tom Goldstein. "Son of Zorn’s Lemma: Targeted Style Transfer Using Instance-Aware Semantic Segmentation", International Conference on Acoustics, Speech and Signal Processing, 2017.
+[4] Tsung-Yi Lin, Piotr Dollar, Ross Girshick1, Kaiming He1, Bharath Hariharan1 and Serge Belongie. "Feature Pyramid Networks for Object Detection", arXiv:1612.03144v2, 19 Apr 2017.
+[5] Kaiming He, Georgia Gkioxari, Piotr Dollar and Ross Girshick. "Mask R-CNN", arXiv:1703.06870v2, 5 Apr 2017.
 
 
