@@ -69,27 +69,27 @@ compare adam and lbfgs
 compare different layers
 
 Initially we had planned to do the style transfer to the entire image, followed by instance aware semantic segmentation which gave us the masks for different objects in the image. Then using these masks and user input we planned to superimpose the style onto original image accordingly. But this approach was not optimal as we were transferring many styles over the entire image which was redundant.  So we came up with a different approach for achieving targeted style transfer. Now, we are first doing the instance aware semantic segmentation part, which gives us the bounding boxes as well as the masks for each instance of every object in the image. After that, we take the input from the user as to which instance of which object he/she wants the style to be transferred on. The user can select multiple object instances and for the selected objects, we generate the masks as black and white images, with the white part denoting the mask for that object instance. Once this is done, we transfer the style onto the various user specified objects, and finally we get the style transferred image with the style transfer on the selected objects accordingly.
-
+<br>
 # **Results**
 In this section we present various results we got from our network.
 
-## Content image
+## **Content image**
 <img src="data/content.png"/>
 
-## Style image
+## **Style image**
 <img src="data/style.png"/>
 
 The following results are obtained for 1000 iterations and a ratio of 1:40 for content & style weights.
 
-## Output when only conv4_2 is used
+## **Output when only conv4_2 is used**
 <img src="data/result_conv4_2.png"/>
 
-## Output when only conv2_2 is used
+## **Output when only conv2_2 is used**
 <img src="data/result_conv2_2.png"/>
 
-## Output when both conv2_2 and conv4_2 are taken together
+## **Output when both conv2_2 and conv4_2 are taken together**
 <img src="data/result_both_layers.png"/>
-
+<br>
 # **References**
 
 
