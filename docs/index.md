@@ -26,15 +26,15 @@ Till now CNNs have effectively been used to identify objects and put bounding bo
 
 In Mask R-CNN, a Fully Convolutional Network (FCN) is added on top of the CNN features of Faster R-CNN to generate a mask (segmentation output). Notice how this is in parallel to the classification and bounding box regression network of Faster R-CNN. This additional network outputs a binary mask that says whether or not a given pixel is part of the object. The inputs and outputs to this branch are as follows : 
 
-### Inputs - CNN Feature Map.
-### Outputs - Matrix with 1’s for all the pixel locations which belong to the object & 0’s elsewhere.
+### **Inputs** - CNN Feature Map.
+### **Outputs** - Matrix with 1’s for all the pixel locations which belong to the object & 0’s elsewhere.
 
 
-### ROI Align - Aligning the ROI to be more accurate:
+### **ROI Align** - Aligning the ROI to be more accurate:
 In the original Faster RCNN, the feature maps selected by the ROI Pool layer is slightly misaligned from the regions of the original image. As we need pixel level perfection for image segmentation, this will lead to inaccuracies.
 We can solve this problem by adjusting the  ROI Pool  layer to be more precisely aligned by using a method known as ROI Align.
 
-### Feature Pyramid Network(FPN)
+### **Feature Pyramid Network(FPN)**
 Additionally, the Mask-RCNN also leverages the FPN to be able to detect objects in an image at different scales. This is quite useful in real world images, when there could exist instances of the the same object in an image, but at different scales.
 <br>
 <br>
