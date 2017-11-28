@@ -60,6 +60,7 @@ Style Loss:  To capture style of an image we use gram matrix.  Gram matrix G rep
 Style loss at a particular layer can be calculated using the below formula:
 
 <img src="data/style_loss.PNG"/>
+
 Usually we use more than one layer to capture the style loss. There we do the summation over losses of all the layers we use with weights being given to each layer to specify the importance of that particular layer. Therefore the style loss would be:
 
 <img src="data/overall_style_loss.PNG"/>
