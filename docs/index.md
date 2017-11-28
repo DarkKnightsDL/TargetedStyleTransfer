@@ -37,7 +37,13 @@ We can solve this problem by adjusting the  ROI Pool  layer to be more precisely
 ### **Feature Pyramid Network(FPN)**
 Additionally, the Mask-RCNN also leverages the FPN to be able to detect objects in an image at different scales. This is quite useful in real world images, when there could exist instances of the the same object in an image, but at different scales.
 <br>
+
+## Example images with objects detected by semantic segmentation
+<img src="data/akshay2_bbox.png"/>
 <br>
+<img src="data/team_bbox.png"/>
+<br>
+<br.
 
 ## **Style Transfer:**
 We implement style transfer as an optimization problem as described in Gatys et al. Given a content image c, and a style image s we start with any random image and try to minimize the overall loss (content and style loss) given by the formula:
@@ -84,6 +90,12 @@ In this section we present various results we got from our network.
 
 ## **Style image**
 <img src="data/style.png"/>
+
+## **Output from semantic segmentation**
+<img src="data/me_bbox.png"/>
+
+## **Mask image generated using output of semantic segmentation step which will also be given as input to style transfer**
+<img src="data/me_mask1.png"/>
 
 The following results are obtained for 1000 iterations and a ratio of 1:40 for content & style weights.
 
