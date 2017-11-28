@@ -55,11 +55,11 @@ beta = style loss weightage
 
 Total loss has two components:
 
-content loss:  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content and style features if image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results.
+**Content Loss:**  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content and style features if image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results.
 
 <img src="data/content_loss.PNG"/>
 
-Style Loss:  To capture style of an image we use gram matrix.  Gram matrix G represents the correlations between the responses of each filter. The Gram matrix is an approximation to the covariance matrix -- we want the activation statistics of our generated image to match the activation statistics of our style image, and matching the (approximate) covariance is one way to do that.
+**Style Loss:**  To capture style of an image we use gram matrix.  Gram matrix G represents the correlations between the responses of each filter. The Gram matrix is an approximation to the covariance matrix -- we want the activation statistics of our generated image to match the activation statistics of our style image, and matching the (approximate) covariance is one way to do that.
 
 <img src="data/gram_matrix.PNG"/>
 
@@ -94,7 +94,7 @@ In this section we present various results we got from our network.
 <img src="data/style.png"/>
 
 ## **Output from semantic segmentation**
-<img src="data/me_bbox.png"/>
+<img src="data/me_bbox_new.png"/>
 
 ## **Mask image generated using output of semantic segmentation step which will also be given as input to style transfer**
 <img src="data/me_mask1.jpg"/>
