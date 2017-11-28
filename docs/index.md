@@ -60,9 +60,9 @@ Total loss has two components:
 
 <img src="data/content_loss.PNG"/>
 
-Where M = Height * Width of the image
+M = Height * Width of the image
 <br>
-      N = Depth (number of channels) of the image
+N = Depth (number of channels) of the image
 
 **Style Loss:**  To capture style of an image we use gram matrix.  Gram matrix G represents the correlations between the responses of each filter. The Gram matrix is an approximation to the covariance matrix -- we want the activation statistics of our generated image to match the activation statistics of our style image, and matching the (approximate) covariance is one way to do that.
 
