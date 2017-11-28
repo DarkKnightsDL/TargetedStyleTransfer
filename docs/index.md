@@ -118,7 +118,7 @@ The following results are obtained for 1000 iterations and a ratio of 1:40 for c
 ## **Output when both conv2_2 and conv4_2 are taken together**
 <img src="data/result_both_layers.png"/>
 <br>
-
+<br>
 Here, we also show an example of multi style transfer to different objects in an image.
 
 ## **Content image**
