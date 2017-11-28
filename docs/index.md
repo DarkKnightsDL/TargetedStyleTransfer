@@ -98,4 +98,6 @@ The following results are obtained for 1000 iterations and a ratio of 1:40 for c
 <br>
 # **References**
 
+[1] Leon A. Gatys, Alexander S. Ecker and Matthias Bethge. "A Neural Algorithm of Artistic Style", arXiv:1508.06576v2, 2 Sep 2015.
+
 
