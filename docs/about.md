@@ -12,13 +12,13 @@ permalink: /about/
 	<h3>Anshul Rawat</h3>
 	University Of Southern California<br/>
 	anshulr@usc.edu<br/>
-	<a href="https://www.linkedin.com/in/anshul-rawat-72017848/">Linkedin</a> | <a href="https://github.com/">GitHub</a>
+	<a href="https://www.linkedin.com/in/anshul-rawat-72017848/">Linkedin</a> | <a href="https://github.com/ar1607">GitHub</a>
     </td>
     <td>
 	<h3>Akshay Kumar Shreekanth</h3>
 	University Of Southern California<br/>
 	shreekan@usc.edu<br/>
-	<a href="https://www.linkedin.com/in/akshaykumars/">Linkedin</a> | <a href="https://github.com/">GitHub</a>
+	<a href="https://www.linkedin.com/in/akshaykumars/">Linkedin</a> | <a href="https://github.com/akshaykmr080">GitHub</a>
     </td>
     <td>
 	<h3>Shashi Kiran Yellappa</h3>
