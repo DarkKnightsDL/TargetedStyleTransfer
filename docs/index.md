@@ -6,11 +6,11 @@ layout: default
 
 <h4 align="center">Anshul Rawat, Akshay Kumar, Shashi Kiran</h4>
 
-<h1>Introduction/ Problem statement:</h1>
+# **Introduction/ Problem statement**
 
 Style transfer has been around for last two-three years now. Most of the work is being done on style transfer to entire image. In Recent times there has been considerable amount of work going in to transfer multiple styles to certain parts of the image. We are trying to implement instance aware targeted style transfer, in which different styles can be transferred to different objects of the image as per the requirement. For example, if an image contains a car and a person we can transfer one style to the car and other style to person. It can also transfer different styles to different instances of the same object.
 
-# Our Approach:
+# **Our Approach**
 
 We are doing it in two phases:
 
@@ -18,7 +18,7 @@ We are doing it in two phases:
 
 2) Style transfer.
 
-## Instance aware semantic segmentation:
+## **Instance aware semantic segmentation:**
 Here, for semantic segmentation we are using an implementation of Mask-RCNN, based on Feature Pyramid Networks(FPN) and using a ResNet101 network as the backbone. For training, we used the MS COCO dataset. We pass an image as input and the network outputs bounding boxes and segmentation masks for each instance for every object in a image. 
 Till now CNNs have effectively been used to identify objects and put bounding boxes around them. We can go one step further and locate exact pixels of bounding boxes which belong to the object. In order to accomplish this, we have leveraged the Mask RCNN network.
   
@@ -39,7 +39,7 @@ Additionally, the Mask-RCNN also leverages the FPN to be able to detect objects 
 <br>
 <br>
 
-## Style Transfer:
+## **Style Transfer:**
 We implement style transfer as an optimization problem as described in Gatys et al. [1]. Given a content image c, and a style image s we start with any random image and try to minimize the overall loss( content and style loss) given by the formula:
 x∗=argminx(αLcontent(c,x)+βLstyle(s,x))
 L=αLc+βLs
@@ -70,7 +70,7 @@ compare different layers
 
 Initially we had planned to do the style transfer to the entire image, followed by instance aware semantic segmentation which gave us the masks for different objects in the image. Then using these masks and user input we planned to superimpose the style onto original image accordingly. But this approach was not optimal as we were transferring many styles over the entire image which was redundant.  So we came up with a different approach for achieving targeted style transfer. Now, we are first doing the instance aware semantic segmentation part, which gives us the bounding boxes as well as the masks for each instance of every object in the image. After that, we take the input from the user as to which instance of which object he/she wants the style to be transferred on. The user can select multiple object instances and for the selected objects, we generate the masks as black and white images, with the white part denoting the mask for that object instance. Once this is done, we transfer the style onto the various user specified objects, and finally we get the style transferred image with the style transfer on the selected objects accordingly.
 
-# Results:
+# **Results**
 In this section we present various results we got from our network.
 
 ## Content image
@@ -90,6 +90,6 @@ The following results are obtained for 1000 iterations and a ratio of 1:40 for c
 ## Output when both conv2_2 and conv4_2 are taken together
 <img src="data/result_both_layers.png"/>
 
-# References:
+# **References**
 
 
