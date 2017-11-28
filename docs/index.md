@@ -14,9 +14,9 @@ Style transfer has been around for last two-three years now. Most of the work is
 
 We are doing it in two phases:
 
-Instance aware semantic segmentation.
+1) Instance aware semantic segmentation.
 
-Style transfer.
+2) Style transfer.
 
 ## Instance aware semantic segmentation:
 Here, for semantic segmentation we are using an implementation of Mask-RCNN, based on Feature Pyramid Networks(FPN) and using a ResNet101 network as the backbone. For training, we used the MS COCO dataset. We pass an image as input and the network outputs bounding boxes and segmentation masks for each instance for every object in a image. 
@@ -36,10 +36,8 @@ We can solve this problem by adjusting the  ROI Pool  layer to be more precisely
 
 ### Feature Pyramid Network(FPN)
 Additionally, the Mask-RCNN also leverages the FPN to be able to detect objects in an image at different scales. This is quite useful in real world images, when there could exist instances of the the same object in an image, but at different scales.
-
-
-
-
+<br>
+<br>
 
 ## Style Transfer:
 We implement style transfer as an optimization problem as described in Gatys et al. [1]. Given a content image c, and a style image s we start with any random image and try to minimize the overall loss( content and style loss) given by the formula:
