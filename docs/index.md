@@ -43,7 +43,7 @@ Additionally, the Mask-RCNN also leverages the FPN to be able to detect objects 
 <br>
 <img src="data/team_bbox.png"/>
 <br>
-<br.
+<br>
 
 ## **Style Transfer:**
 We implement style transfer as an optimization problem as described in Gatys et al. Given a content image c, and a style image s we start with any random image and try to minimize the overall loss (content and style loss) given by the formula:
@@ -95,7 +95,7 @@ In this section we present various results we got from our network.
 <img src="data/me_bbox.png"/>
 
 ## **Mask image generated using output of semantic segmentation step which will also be given as input to style transfer**
-<img src="data/me_mask1.png"/>
+<img src="data/me_mask1.jpg"/>
 
 The following results are obtained for 1000 iterations and a ratio of 1:40 for content & style weights.
 
