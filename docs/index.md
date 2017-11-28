@@ -51,13 +51,18 @@ We implement style transfer as an optimization problem as described in Gatys et 
 <img src="data/total_loss.PNG"/>
 
 alpha = content loss weightage
+<br>
 beta = style loss weightage
 
 Total loss has two components:
 
-**Content Loss:**  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content and style features if image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results.
+**Content Loss:**  Content loss measures how much the feature map of the generated image differs from the feature map of the source image. Conv4_2 layer was used in Gatys et al for evaluating the content loss and conv2_2 was used in johnson et al for content loss. Initial layers represent the lower level content and style features if image and deeper layers represent higher level features. Higher or deeper layers represent or maintain the spatial structure of the image but may not necessarily represent the exact size and shape of the image. Based on the runs we had we observed that using both layers for evaluation of content loss was giving us more aesthetically pleasing results. Each row of F or P represents the vectorized activations of a particular filter, convolved over all positions of the image.
 
 <img src="data/content_loss.PNG"/>
+
+Where M = Height * Width of the image
+<br>
+      N = Depth (number of channels) of the image
 
 **Style Loss:**  To capture style of an image we use gram matrix.  Gram matrix G represents the correlations between the responses of each filter. The Gram matrix is an approximation to the covariance matrix -- we want the activation statistics of our generated image to match the activation statistics of our style image, and matching the (approximate) covariance is one way to do that.
 
@@ -81,6 +86,9 @@ We have used L-BFGS optimizer as the default optimizer in our network for style 
 
 <img src="data/lbfgs_adam.png"/>
 
+## **Example output of style transfer on an image**
+<img src="data/sky_result.png"/>
+
 
 Initially we had planned to do the style transfer to the entire image, followed by instance aware semantic segmentation which gave us the masks for different objects in the image. Then using these masks and user input we planned to superimpose the style onto original image accordingly. But this approach was not optimal as we were transferring many styles over the entire image which was redundant.  So we came up with a different approach for achieving targeted style transfer. Now, we are first doing the instance aware semantic segmentation part, which gives us the bounding boxes as well as the masks for each instance of every object in the image. After that, we take the input from the user as to which instance of which object he/she wants the style to be transferred on. The user can select multiple object instances and for the selected objects, we generate the masks as black and white images, with the white part denoting the mask for that object instance. Once this is done, we transfer the style onto the various user specified objects, and finally we get the style transferred image with the style transfer on the selected objects accordingly.
 <br>
@@ -94,7 +102,7 @@ In this section we present various results we got from our network.
 <img src="data/style.png"/>
 
 ## **Output from semantic segmentation**
-<img src="data/me_bbox_new.png"/>
+<img align = "left" src="data/me_bbox_new.png"/>
 
 ## **Mask image generated using output of semantic segmentation step which will also be given as input to style transfer**
 <img src="data/me_mask1.jpg"/>
