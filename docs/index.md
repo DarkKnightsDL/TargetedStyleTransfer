@@ -4,7 +4,7 @@ layout: default
 
 <h1 align="center"><b>Targeted Style Transfer</b></h1>
 
-<h4 align="center">Anshul Rawat, Akshay Kumar, Shashi Kiran</h4>
+<h4 align="center">Anshul Rawat, Akshay Kumar Shreekanth, Shashi Kiran Yellappa</h4>
 
 # **Introduction/ Problem statement**
 
